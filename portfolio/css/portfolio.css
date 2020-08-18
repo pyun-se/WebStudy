@@ -10,7 +10,7 @@ body{
 }h2{
 	width: 1000px;
 	margin: 0 auto;
-	padding: 0 40px;  /*미디어커리로 연결하기*/
+	padding: 0 40px;
 	font-size: 40px;
 	font-weight: bold;
 }
