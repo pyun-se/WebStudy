@@ -126,21 +126,28 @@ body{
 	font-weight: bold;
 }.table_size th, .table_size td{
 	border: 1px solid var(--whitegray-border);
-}.table_size td:nth-child(n+3):nth-child(-n+8){
+}.table_size .size_col-seperate{
+	width: auto;
+}.table_size .size_col-small,.size_col-medium,.size_col-large{
 	width: 90px;
-}.table_size td:nth-child(9){
-	width: 140px;
+}.table_size .size_col-xlarge{
+	width: 150px;
 }
 /*--table_cost--*/
 .table_cost thead{
 	background-color: var(--white-background);
 	border-top: 2px solid #a5a5a5;
 	border-bottom: 1px solid var(--whitegray-border);
+}.table_cost .cost_col-seperate{
+	width: auto;
+}.table_cost .cost_col-refund,.cost_col-commission,.cost_col-total{
+	width: 200px;
 }.table_cost td:nth-child(n+2):nth-child(-n+4){
 	text-align: right;
 	width: 150px;
 	padding-right: 50px;
-}.table_cost tfoot{
+}
+.table_cost tfoot{
 	font-weight: bold;
 	border-top: 1px solid #a5a5a5;
 	border-bottom: 1px solid var(--whitegray-border);
