@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width==device-width, initial-scale=1.0">
+        <title>프로모션</title>
+        <link href="./css/promotion.css" rel="stylesheet">
+    </head>
+    <body>
+        <script>
+            function buttonChange(i){
+                if(document.getElementsByClassName("A")[i].style.display=='block'){
+                    document.getElementsByClassName("Q_button")[i].innerHTML = `<div class="Q_openbutton">
+                                                                                    <span class="blind">펼침</span>
+                                                                                </div>`;
+                    document.getElementsByClassName("A")[i].style.display='none';
+                }else{
+                    document.getElementsByClassName("Q_button")[i].innerHTML = `<div class="Q_closebutton">
+                                                                                    <span class="blind">닫힘</span>
+                                                                                </div>`;
+                    document.getElementsByClassName("A")[i].style.display='block';
+                }
+            }
+        </script>
+
+        <div class="header">
+            <a href="unknown" class="header_link"><span class="blind">Foodwith</span></a>
+        </div>
+
+        <div class="main" id="top">
+            <div class="blind">
+                <h1>
+                    Foodwith에 여러분을 초대합니다!
+                </h1>
+                <p>
+                    Foodwith가 정식 오픈하였습니다. 레시피뿐만 아니라 푸드 크리에이터, 푸드 비즈니스, 푸드 스토어 등 다양한 소식을 지금 확인해보세요.
+                </p>
+            </div>
+        </div>
+        <div class="creater">
+            <div class="blind">
+                <h3>
+                    푸드위드 크리에이터
+                </h3>
+                <p>
+                    자신만의 특별한 푸드 콘텐츠를 만들어 공유하면 당신도 푸드위드 크리에이터가 될 수 있어요 지금 바로 푸드위드 크리에이터에 도전해보세요!
+                </p>
+                <ol>
+                    <li>
+                        <h6>STEP 01</h6>
+                        <p>푸드위드에 신규 가입해주세요</p>
+                    </li>
+                    <li>
+                        <h6>STEP 02</h6>
+                        <p>로그인 후 Work 메뉴를 클릭해주세요</p>
+                    </li>
+                    <li>
+                        <h6>STEP 03</h6>
+                        <p>자신만의 푸드 콘텐츠를 올려주세요</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="store">
+            <div class="blind">
+                <h3">
+                    푸드위드 스토어
+                </h3>
+                <p>
+                    신선한 과일과 채소를 저렴한 가격으로 만날 수 있는 푸드위드 스토어! 이번주 타임 특가 할인율을 확인하세요
+                </p>
+            </div>
+            <ul>
+                <li>
+                    <a href="unknown">
+                        <img src="./image/thumbnail_apple.jpg" alt="꿀사과">
+                        <div><h2>30%</h2>00:00 ~ 03:00</div>
+                    </a>
+                    <p>꿀사과<br> <span class="fruit_cost">8,900</span>원</p>
+                </li>
+                <li>
+                    <a href="unknown">
+                        <img src="./image/thumbnail_onion.jpg" alt="친환경 양파">
+                        <div><h2>60%</h2>04:00 ~ 06:00</div>
+                    </a>
+                    <p>친환경 양파<br> <span class="fruit_cost">2,900</span>원</p>
+                </li>
+                <li>
+                    <a href="unknown">
+                        <img src="./image/thumbnail_banana.jpg" alt="제주 직송 유기농 바나…">
+                        <div><h2>20%</h2>07:00 ~ 09:00</div>
+                    </a>
+                    <p>제주 직송 유기농 바나…<br> <span class="fruit_cost">33,900</span>원</p>
+                </li>
+                <li>
+                    <a href="unknown">
+                        <img src="./image/thumbnail_kiwi.jpg" alt="국내산 키위">
+                        <div><h2>50%</h2>10:00 ~ 12:00</div>
+                    </a>
+                    <p>국내산 키위<br> <span class="fruit_cost">16,900</span>원</p>
+                </li>
+                <li>
+                    <a href="unknown">
+                        <img src="./image/thumbnail_broccoli.jpg" alt="유기농 브로콜리">
+                        <div><h2>60%</h2>13:00 ~ 15:00</div>
+                    </a>
+                    <p>유기농 브로콜리<br> <span class="fruit_cost">2,480</span>원</p>
+                </li>
+                <li>
+                    <a href="unknown">
+                        <img src="./image/thumbnail_lemon.jpg" alt="본사 직영 레몬">
+                        <div><h2>30%</h2>16:00 ~ 18:00</div>
+                    </a>
+                    <p>본사 직영 레몬<br> <span class="fruit_cost">14,900</span>원</p>
+                </li>
+                <li>
+                    <a href="unknown">
+                        <img src="./image/thumbnail_garlic.jpg" alt="국내산 마늘">
+                        <div><h2>20%</h2>19:00 ~ 21:00</div>
+                    </a>
+                    <p>국내산 마늘<br> <span class="fruit_cost">10,900</span>원</p>
+                </li>
+                <li>
+                    <a href="unknown">
+                        <img src="./image/thumbnail_tomato.jpg" alt="정품 완숙 토마토">
+                        <div><h2>50%</h2>22:00 ~ 24:00</div>
+                    </a>
+                    <p>정품 완숙 토마토<br> <span class="fruit_cost">19,900</span>원</p>
+                </li>
+            </ul>
+        </div>
+        <div class="recipe">
+            <div class="blind">
+                <h3>
+                    푸드위드 레시피
+                </h3>
+                <p>
+                    엄선된 유명 셰프들의 레시피도 보고 여러분의 최고의 음식을 만들어보세요 당신도 셰프가 될 수 있어요
+                </p>
+            </div>
+            <ul>
+                <a href="unknown" class="recipe_cake">
+                    <li class="blind">
+                        <h6>노오븐 딸기 케이크</h6>
+                        <p>오븐 없이 빠른 시간 내 예쁜 컵 케이크를 만들 수 있어요. 밀가루와 달걀, 물, 치즈크림, 설탕, 설탕시럽, 생크림만 준비해주세요.</p>
+                    </li>
+                </a>
+                <a href="unknown" class="recipe_tarte">
+                    <li class="blind">
+                        <h6>바나나 푸딩 타르트</h6>
+                        <p>푸딩처럼 부드러운 바나나 크림이 더해진 타르트예요. 박력분, 버터, 물, 계란, 소금, 우유, 생크림, 설탕, 바나나, 바닐라 오일을 준비해주세요.</p>
+                    </li>
+                </a>
+            </ul>
+            <a href="unknown" class="recipe_button"><span class="blind">레시피 전체 보기</span></a>
+        </div>
+        <div class="FAQ">
+            <h4><span class="blind">FAQ</span></h4>
+            <ul>
+                <li>
+                    <div class="FAQ_Q">
+                        <div class="Q_q"><span class="blind">Q</span></div>
+                        <div class="Q_question">푸드 파트너가 되려면 어떻게 해야 하나요? 푸드위드 회원인 경우 푸드 파트너를 따로 신청하지 않아도 되나요?</div>
+                        <button class="Q_button" onclick="buttonChange(0)"> 
+                            <div class="Q_openbutton">
+                                <span class="blind">펼침</span>
+                            </div>                   
+                        </button>
+                    </div>
+                    <div class="A">
+                        <div class="FAQ_A">
+                            <div class="A_a"><span class="blind">A</span></div>
+                            <div>푸드위드에 가입해주세요. 가입 후 푸드파트너 메뉴에 신청해주시면 자격 조건을 확인 후 파트너가 될 수 있어요.</div>    
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="FAQ_Q">
+                        <div class="Q_q"><span class="blind">Q</span></div>
+                        <div class="Q_question">아이디와 비밀번호를 잊어버렸어요</div>
+                        <button class="Q_button" onclick="buttonChange(1)">
+                            <div class="Q_openbutton">
+                                <span class="blind">펼침</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="A">
+                        <div class="FAQ_A">
+                            <div class="A_a"><span class="blind">A</span></div>
+                            <div>로그인 화면 내 [아이디 찾기], [비밀번호 찾기]를 클릭해 주세요.<br>회원정보에 있는 이메일로 임시 비밀번호를 전송해드립니다.<br>보안을 위해 임시 비밀번호 로그인 후 비밀번호를 재설정해주세요.</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="FAQ_Q">
+                        <div class="Q_q"><span class="blind">Q</span></div>
+                        <div class="Q_question">레시피에 사용한 제품을 알고 싶어요</div>
+                        <button class="Q_button" onclick="buttonChange(2)">
+                            <div class="Q_openbutton">
+                                <span class="blind">펼침</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="A">
+                        <div class="FAQ_A">
+                            <div class="A_a"><span class="blind">A</span></div>
+                            <div>레시피 하단에 사용한 제품 정보를 확인할 수 있어요. 또한 푸드 스토어에서도 확인 가능할 뿐만 아니라 구매도 가능해요.</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="FAQ_Q">
+                        <div class="Q_q"><span class="blind">Q</span></div>
+                        <div class="Q_question">레시피를 저장하고 싶어요</div>
+                        <button class="Q_button" onclick="buttonChange(3)">
+                            <div class="Q_openbutton">
+                                <span class="blind">펼침</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="A">
+                        <div class="FAQ_A">
+                            <div class="A_a"><span class="blind">A</span></div>
+                            <div>레시피를 북마크 하시려면 로그인 후 마이페이지 북마크 메뉴에서 확인하실 수 있어요.</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="FAQ_Q">
+                        <div class="Q_q"><span class="blind">Q</span></div>
+                        <div class="Q_question">푸드 크리에이터는 상시 신청이 가능한가요?</div>
+                        <button class="Q_button" onclick="buttonChange(4)">
+                            <div class="Q_openbutton">
+                                <span class="blind">펼침</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="A">
+                        <div class="FAQ_A">
+                            <div class="A_a"><span class="blind">A</span></div>
+                            <div>회원가입 후 월 4건 이상 푸드 콘텐츠를 제작해 주세요. 조건에 한하여 상시로 푸드 크리에이터 자격이 수여되고 있어요.</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="TOP">
+            <a href="#top"><span class="blind">TOP</span></a>
+        </div>
+
+        <div class="footer">
+            ©<b>foodwith</b> All Right Reserved.
+        </div>
+    </body>
+</html>
